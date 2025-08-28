@@ -9,18 +9,18 @@ on:
       - "*"
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  linux_tests:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
       fail-fast: true
       matrix:
-        php: [7.3, 7.4]
-        stability: [prefer-lowest, prefer-stable]
+        php: [7.4, 8.2, 8.3, 8.4]
 
-    name: PHP ${{ matrix.php }} - ${{ matrix.stability }}
+    name: PHP ${{ matrix.php }}
 
     steps:
       - name: Checkout code
@@ -39,7 +39,7 @@ jobs:
         with:
           timeout_minutes: 5
           max_attempts: 5
-          command: composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress
+          command: composer install --prefer-dist --no-interaction --no-progress
 
       - name: Execute tests
-        run: vendor/bin/phpunit --verbose
+        run: vendor/bin/phpunit --testdox

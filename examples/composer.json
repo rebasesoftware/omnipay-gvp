@@ -2,9 +2,9 @@
   "name": "payment/examples",
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.3",
+    "php": "^7.2||^8.0",
     "league/omnipay": "^3",
-    "alegra/omnipay-gvp": "v0.0.14"
+    "rebasesoftware/omnipay-gvp": "*"
   },
   "autoload": {
     "psr-4": {

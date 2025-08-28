@@ -1,22 +1,19 @@
 # omnipay-gvp
 <p>
-<a href="https://github.com/alegraio/omnipay-gvp/actions"><img src="https://github.com/alegraio/omnipay-gvp/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/alegra/omnipay-gvp"><img src="https://img.shields.io/packagist/dt/alegra/omnipay-gvp" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/alegra/omnipay-gvp"><img src="https://img.shields.io/packagist/v/alegra/omnipay-gvp" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/alegra/omnipay-gvp"><img src="https://img.shields.io/packagist/l/alegra/omnipay-gvp" alt="License"></a>
+<a href="https://github.com/rebasesoftware/omnipay-gvp/actions"><img src="https://github.com/rebasesoftware/omnipay-gvp/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/rebasesoftware/omnipay-gvp"><img src="https://img.shields.io/packagist/dt/rebasesoftware/omnipay-gvp" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/rebasesoftware/omnipay-gvp"><img src="https://img.shields.io/packagist/v/rebasesoftware/omnipay-gvp" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/rebasesoftware/omnipay-gvp"><img src="https://img.shields.io/packagist/l/rebasesoftware/omnipay-gvp" alt="License"></a>
 </p>
 
-Gvp (Garanti, Denizbank, TEB, ING, Şekerbank, TFKB sanal pos) gateway for Omnipay payment processing library
+GVP gateway for Omnipay payment processing library
 
 <a href="https://github.com/thephpleague/omnipay">Omnipay</a> is a framework agnostic, multi-gateway payment
-processing library for PHP 7.3+. This package implements Gvp Online Payment Gateway support for Omnipay.
-
-* You have to contact the Garanti(Gvp) for the document.
-
+processing library for PHP >=7.4 This package implements Gvp Online Payment Gateway support for Omnipay.
 
 ## Requirement
 
-* PHP >= 7.3.x,
+* PHP >= 7.4.x,
 * [Omnipay V.3](https://github.com/thephpleague/omnipay) repository,
 * PHPUnit to run tests
 
@@ -31,7 +28,7 @@ composer require league/omnipay:^3
 Then you have to install omnipay-payu package:
 
 ```bash
-composer require alegra/omnipay-gvp
+composer require rebasesoftware/omnipay-gvp
 ```
 
 > `payment-gvp` follows the PSR-4 convention names for its classes, which means you can easily integrate `payment-gvp` classes loading in your own autoloader.
