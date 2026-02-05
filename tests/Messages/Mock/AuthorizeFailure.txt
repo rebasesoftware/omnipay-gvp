@@ -20,7 +20,7 @@ Access-Control-Max-Age: 300
 	</Terminal>
 	<Customer>
 		<IPAddress>10.241.19.2</IPAddress>
-		<EmailAddress>test@garanti.com.tr</EmailAddress>
+		<EmailAddress>test@garantibbva.com.tr</EmailAddress>
 	</Customer>
 	<Order>
 		<OrderID>4546768783243</OrderID>

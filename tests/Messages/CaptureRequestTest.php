@@ -19,7 +19,7 @@ class CaptureRequestTest extends GvpTestCase
 
     public function testEndpoint(): void
     {
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
     }
 
     public function testOrderId(): void
@@ -38,7 +38,7 @@ class CaptureRequestTest extends GvpTestCase
 
         self::assertTrue($response->isSuccessful());
         self::assertFalse($response->isRedirect());
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
         self::assertSame('PROVAUT', $this->request->getProcessName());
         self::assertSame('032402285079', $response->getTransactionReference());
     }
@@ -51,7 +51,7 @@ class CaptureRequestTest extends GvpTestCase
         self::assertFalse($response->isSuccessful());
         self::assertFalse($response->isRedirect());
         self::assertSame('', $response->getTransactionReference());
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
         self::assertSame('PROVAUT', $this->request->getProcessName());
         self::assertSame('92', $response->getCode());
         self::assertSame('Bu terminal için yanlış işyeri numarası girilmiştir', $response->getMessage());

@@ -20,7 +20,7 @@ Access-Control-Max-Age: 300
 	</Terminal>
 	<Customer>
 		<IPAddress>10.241.19.2</IPAddress>
-		<EmailAddress>emrez@garanti.com.tr</EmailAddress>
+		<EmailAddress>emrez@garantibbva.com.tr</EmailAddress>
 	</Customer>
 	<Order>
 		<OrderID>4354353454</OrderID>

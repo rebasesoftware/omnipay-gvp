@@ -23,8 +23,8 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest i
 
     /** @var array */
     protected $endpoints = [
-        'test' => 'https://sanalposprovtest.garanti.com.tr/VPServlet',
-        'prod' => 'https://sanalposprov.garanti.com.tr/VPServlet'
+        'test' => 'https://sanalposprovtest.garantibbva.com.tr/VPServlet',
+        'prod' => 'https://sanalposprov.garantibbva.com.tr/VPServlet'
     ];
 
     protected $currency_list = [

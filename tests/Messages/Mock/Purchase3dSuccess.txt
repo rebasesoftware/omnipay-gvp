@@ -31,15 +31,15 @@ Access-Control-Max-Age: 300
   ["txninstallmentcount"]=>
   string(0) ""
   ["customeremailaddress"]=>
-  string(20) "test@garanti.com.tr"
+  string(20) "test@garantibbva.com.tr"
   ["customeripaddress"]=>
   string(11) "10.241.19.2"
   ["orderid"]=>
   string(10) "9809896rew"
   ["successurl"]=>
-  string(52) "https://eticaret.garanti.com.tr/destek/postback.aspx"
+  string(52) "https://eticaret.garantibbva.com.tr/destek/postback.aspx"
   ["errorurl"]=>
-  string(52) "https://eticaret.garanti.com.tr/destek/postback.aspx"
+  string(52) "https://eticaret.garantibbva.com.tr/destek/postback.aspx"
   ["lang"]=>
   string(2) "tr"
   ["txntimestamp"]=>

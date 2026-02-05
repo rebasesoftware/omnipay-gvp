@@ -142,8 +142,8 @@ class GvpTestCase extends TestCase
             'orderId' => '4354353454',
             'amount' => '500',
             'currency' => 'TRY',
-            'returnUrl' => 'https://eticaret.garanti.com.tr/destek/postback.aspx',
-            'cancelUrl' => 'https://eticaret.garanti.com.tr/destek/postback.aspx',
+            'returnUrl' => 'https://eticaret.garantibbva.com.tr/destek/postback.aspx',
+            'cancelUrl' => 'https://eticaret.garantibbva.com.tr/destek/postback.aspx',
             'installment' => '',
             'paymentMethod' => '',
             'clientIp' => 'xxx',
@@ -164,7 +164,7 @@ class GvpTestCase extends TestCase
         $cardInfo['expiryYear'] = '23';
         $cardInfo['cvv'] = '465';
         $card = new CreditCard($cardInfo);
-        $card->setEmail('test@garanti.com.tr');
+        $card->setEmail('test@garantibbva.com.tr');
         $card->setFirstName('Test name');
         $card->setLastName('Test lastname');
 

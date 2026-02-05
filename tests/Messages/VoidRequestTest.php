@@ -19,7 +19,7 @@ class VoidRequestTest extends GvpTestCase
 
     public function testEndpoint(): void
     {
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
     }
 
     public function testOrderId(): void
@@ -38,7 +38,7 @@ class VoidRequestTest extends GvpTestCase
 
         self::assertTrue($response->isSuccessful());
         self::assertTrue($response->isCancelled());
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
         self::assertSame('PROVRFN', $this->request->getProcessName());
         self::assertSame('032402285379', $response->getTransactionReference());
     }
@@ -51,7 +51,7 @@ class VoidRequestTest extends GvpTestCase
         self::assertFalse($response->isSuccessful());
         self::assertFalse($response->isCancelled());
         self::assertSame('032402285397', $response->getTransactionReference());
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
         self::assertSame('PROVRFN', $this->request->getProcessName());
         self::assertSame('92', $response->getCode());
         self::assertSame('İptal edebileceğiniz birden fazla işlem var, RRN bilgisi gonderi', $response->getMessage());

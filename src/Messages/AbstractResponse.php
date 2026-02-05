@@ -18,7 +18,7 @@ abstract class AbstractResponse extends \Omnipay\Common\Message\AbstractResponse
 
     /** @var array */
     public $redirectUrl = [
-        'test' => 'https://sanalposprovtest.garanti.com.tr/servlet/gt3dengine',
+        'test' => 'https://sanalposprovtest.garantibbva.com.tr/servlet/gt3dengine',
         'prod' => 'https://sanalposprov.garanti.com.tr/servlet/gt3dengine'
     ];
 

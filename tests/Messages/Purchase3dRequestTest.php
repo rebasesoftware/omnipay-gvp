@@ -34,7 +34,7 @@ class Purchase3dRequestTest extends GvpTestCase
         self::assertTrue($response->isSuccessful());
         self::assertTrue($response->isRedirect());
         self::assertSame('4354353454', $response->getRedirectData()['orderid']);
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/servlet/gt3dengine', $response->getRedirectUrl());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/servlet/gt3dengine', $response->getRedirectUrl());
         self::assertSame('PROVAUT', $this->request->getProcessName());
     }
 }

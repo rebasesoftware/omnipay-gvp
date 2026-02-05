@@ -19,7 +19,7 @@ class PurchaseRequestTest extends GvpTestCase
 
     public function testEndpoint(): void
     {
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
     }
 
     public function testOrderId(): void
@@ -38,7 +38,7 @@ class PurchaseRequestTest extends GvpTestCase
 
         self::assertTrue($response->isSuccessful());
         self::assertFalse($response->isRedirect());
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
         self::assertSame('PROVAUT', $this->request->getProcessName());
         self::assertSame('032402285120', $response->getTransactionReference());
     }
@@ -51,7 +51,7 @@ class PurchaseRequestTest extends GvpTestCase
         self::assertFalse($response->isSuccessful());
         self::assertFalse($response->isRedirect());
         self::assertSame('', $response->getTransactionReference());
-        self::assertSame('https://sanalposprovtest.garanti.com.tr/VPServlet', $this->request->getEndpoint());
+        self::assertSame('https://sanalposprovtest.garantibbva.com.tr/VPServlet', $this->request->getEndpoint());
         self::assertSame('PROVAUT', $this->request->getProcessName());
         self::assertSame('92', $response->getCode());
         self::assertSame('Aynı sipariş içinde sadece bir tane satış işlemi yapılabilir', $response->getMessage());
