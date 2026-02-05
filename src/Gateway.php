@@ -91,17 +91,17 @@ class Gateway extends AbstractGateway
      * @param string $value
      * @return Gateway
      */
-    public function setSecureKey(string $value): Gateway
+    public function setStoreKey(string $value): Gateway
     {
-        return $this->setParameter('secureKey', $value);
+        return $this->setParameter('storeKey', $value);
     }
 
     /**
      * @return string
      */
-    public function getSecureKey(): string
+    public function getStoreKey(): string
     {
-        return $this->getParameter('secureKey');
+        return $this->getParameter('storeKey');
     }
 
     /**

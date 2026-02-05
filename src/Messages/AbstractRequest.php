@@ -197,17 +197,17 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest i
      * @param string $value
      * @return AbstractRequest
      */
-    public function setSecureKey(string $value): AbstractRequest
+    public function setStoreKey(string $value): AbstractRequest
     {
-        return $this->setParameter('secureKey', $value);
+        return $this->setParameter('storeKey', $value);
     }
 
     /**
      * @return string
      */
-    public function getSecureKey(): string
+    public function getStoreKey(): string
     {
-        return $this->getParameter('secureKey');
+        return $this->getParameter('storeKey');
     }
 
     /**
@@ -418,9 +418,8 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest i
         $hashContent .= $params['errorurl'];
         $hashContent .= $params['txntype'];
         $hashContent .= $params['txninstallmentcount'];
-        $hashContent .= $this->getSecureKey();
+        $hashContent .= $this->getStoreKey();
         $hashContent .= $this->getSecurityHash();
-
 
 
         $hashData = strtoupper(sha1($hashContent));

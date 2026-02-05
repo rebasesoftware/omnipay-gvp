@@ -152,7 +152,7 @@ class Helper
             'installment' => '',
             'paymentMethod' => '',
             'clientIp' => 'xxx',
-            'secureKey' => '12345678'
+            'storeKey' => '12345678'
         ];
 
         return $params;
